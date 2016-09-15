@@ -1,0 +1,38 @@
+h1{
+    font-family: Courier New, Courier, monospace;
+    color: darkred;
+    text-align: center;
+    
+}
+
+
+
+.intro{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: cornflowerblue;
+    text-align: center;
+}
+
+body{
+    background-image: url("bgIMG.jpg");
+    
+    
+}
+
+#rotating-item-wrapper {
+    position: absolute;
+    left: 1000px;
+    width: 500px;
+    height: 400px;
+}
+.rotating-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button{
+    position: absolute;
+    left: 600px;
+}
