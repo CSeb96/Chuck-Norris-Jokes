@@ -35,4 +35,17 @@ body{
 #clc{
     position: absolute;
     left: 600px;
+    bottom: 400px;
+}
+
+#fb{
+    position: absolute;
+    bottom: 50px;
+    text-decoration: none;
+}
+
+.desc{
+    text-align: center;
+    color: indianred;
+    ;
 }
