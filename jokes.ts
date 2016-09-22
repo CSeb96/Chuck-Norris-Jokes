@@ -1,5 +1,3 @@
-//<reference path="myjsfile.d.ts"/>
-
 var xhr = new XMLHttpRequest();
 xhr.open('GET', "https://api.chucknorris.io/jokes/random", true);
 xhr.send();
