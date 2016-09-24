@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <h1>#JustChuckNorrisThings</h1>
-         <p class = "intro"> A website that displays random Chuck Norris facts.</p>
-         <p class = "desc">Please click refresh to view a random Chuck Norris fact!</p>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script><script type="text/javascript" src="rotator.js"></script>
 
-        <title>Chuck Norris facts!!</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
+<head>
+    <title>Chuck Norris facts!!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
+    <script
+        type="text/javascript" src="rotator.js"></script>
+</head>
 
-    
-    <body>
-     </pre>
-    <div id="rotating-item-wrapper"><img class="rotating-item" src="rotimages/ckNbullets.jpg" alt="Chuck Norris" width="350" height="500" />
-    <img class="rotating-item" src="rotimages/ckNcall.jpg" alt="Chuck Norris" width="350" height="500" />
-    <img class="rotating-item" src="rotimages/ckNdeath.jpg" alt="Chuck Norris" width="350" height="500" />
-    <img class="rotating-item" src="rotimages/ckNmob.jpg" alt="Chuck Norris" width="350" height="500" />
-    <img class="rotating-item" src="rotimages/ckNmoney.jpg" alt="Chuck Norris" width="350" height="500" />
-    </div>
-    <pre>
-         
-        <FORM>
-            <INPUT TYPE="button" id="clc" onClick="history.go(0)" VALUE="Refresh">
-        </FORM>
-        <script  src="callingjokes.js"></script>
 
-       
+<body>
+    <div class="container">
+        <h1 id="header">#JustChuckNorrisThings</h1>
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a class="navbar-brand" href="#">chucknorrisfacts.azurewebsites.net</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Go to<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://en.wikipedia.org/wiki/Chuck_Norris" target="_new">Wikipedia</a></li>
+                                <li><a href="http://www.imdb.com/name/nm0001569/" target="_new">IMDB</a></li>
+                                <li><a href="http://www.chucknorris.com/" target="_new">Offical website</a></li>
+                            </ul>
+                        </li>
 
-        <a id = "fb" href="http://facebook.com/sharer.php?u=http://chucknorrisfacts.azurewebsites.net" target="_new">
-           <img src="fbImg.jpg" alt="Facebook share" style="width:50px;height:50px;"></a>
-           
-    </body>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Share on
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://facebook.com/sharer.php?u=http://chucknorrisfacts.azurewebsites.net" target="_new">Facebook</a></li>
+                                <li><a href="https://twitter.com/home?status=chucknorrisfacts%40azurewebsites.net" target="_new">Twitter</a></li>
+                                <li><a href="https://plus.google.com/share?url=chucknorrisfacts%40azurewebsites.net" target="_new">Google Plus</a></li>
+                                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=chucknorrisfacts%40azurewebsites.net&title=Chuck%20Norris%20jokes!&summary=Beginner%20level%20website%20dedicated%20to%20Chuck%20Norris%20jokes.&source=http%3A//www.icndb.com/api/"
+                                        target="_new">LinkedIn</a></li>
+                            </ul>
+                </div>
+            </div>
+        </nav>
+        <div class = "center-block">
+            
+        <script src ="jokes.js"></script>
+        <button class = "button" onclick="callJokes()">Press Me for a simple joke!</button>
+        
+        <br><br>
+
+        <div class = "textBox">
+            <form>
+         First name:<br>
+        <input type="text" id = "fn" name="firstname">
+         <br>
+        Last name:<br>
+        <input type="text" id = "ln" name="lastname">
+        </form>
+        </div>
+        <script src ="jokesCust.js"></script>
+        <button class = "button" onclick="jokesCust()">Insert your name in the joke!</button>
+               
+        </div>
+
+        
+
+</body>
+
 </html>
