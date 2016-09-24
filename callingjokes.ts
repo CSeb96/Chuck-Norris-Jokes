@@ -1,11 +1,7 @@
-var xhr = new XMLHttpRequest();
-xhr.open('GET', "https://api.chucknorris.io/jokes/random", true);
-xhr.send();
-xhr.addEventListener("readystatechange", processRequest, false);
-
-function processRequest(e) {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-        var response = JSON.parse(xhr.responseText);
-        alert(response.value);
-    }
+function callerJokes(): void{
+   $.getJSON('http://api.icndb.com/jokes/random?exclude=[explicit]', function(json_data){
+    alert(JSON.stringify(json_data.value.joke));
+   
+});
 }
+
